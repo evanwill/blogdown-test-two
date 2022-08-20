@@ -1,3 +1,5 @@
+html_document: 
+  mathjax: "default"
 bookdown::tufte_html_book:
   toc: yes
   css: 
