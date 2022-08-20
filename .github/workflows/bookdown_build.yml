@@ -26,7 +26,7 @@ jobs:
           use-public-rspm: true
           
       - name: install stuff
-        run: install.packages(c("rmarkdown","bookdown","kableExtra","ggplot","tufte","magick","pdftools"))
+        run: install.packages(c("rmarkdown","bookdown","kableExtra","ggplot2","tufte","magick","pdftools"))
         shell: Rscript {0}
 
       - name: Cache bookdown results
