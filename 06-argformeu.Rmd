@@ -208,11 +208,11 @@ Consider the St. Petersburg game. The game starts by flipping a fair coin. If it
 
 According to MEU, you should be willing to pay any finite amount of utility to play the St. Petersburg game. Here's why. The probability of flipping a coin $n$ times, where $n$ is the first time that the coin lands heads, is $(\frac{1}{2})^n$. The payoff for flipping the coin $n$ times is $2^n$. The expected utility rule says to weight the utility of each possible outcome according to its probability, and then sum them up. This gives us the following sequence of possible series of flips:
 $$
-\begin{align}
+\begin{aligned}
 \text{H} + \text{TH} + \text{TTH} + \cdots &= \left[\frac{1}{2}\times 2\right] + \left[ \frac{1}{4}\times 4 \right] + \left[\frac{1}{8}\times 8 \right] + \cdots \\
 &= 1 + 1 + 1 + \cdots \\
 &= \infty
-\end{align}
+\end{aligned}
 $$
 In other words, the expected utility of the St. Peterburg game is infinitely many utilities. So, we should be willing to pay any amount that is less than infinitely many utilities. Most people think it is absurd to pay any large finite amount. It's unlikely that you're willing to pay even a few hundred units of utility.  The probability of getting a large sequence of tails before a heads is diminishingly small.
 
@@ -223,11 +223,11 @@ There is a closely related idea to Buffon's suggestion, known as *de minimis* ri
 If we ignore sufficiently improbable events, then we can block the St. Peterburg paradox. Say that we only consider outcomes that have at least a 5\% chance of happening (5\% is actually still quite high from a risk analysis perspective, we're just using this number to illustrate a point). Then the last outcome you would consider in the sequence of possible series of coin flips is TTTH, which has a probability of $0.5^4=0.0625$ or a 6.25\% chance. In other words, you would ignore all sequences where there are 5 or more flips. That is, you would only consider the follow sequence: 
 
 $$
-\begin{align}
+\begin{aligned}
 &\frac{1}{2}\times 2 + \frac{1}{4}\times 4 + \frac{1}{8}\times 8 + \frac{1}{16}\times 16 \\
 &= 1 + 1 + 1 + 1 \\
 &= 4
-\end{align}
+\end{aligned}
 $$
 
 There are two related concerns with this solution. One, we haven't provided any reason for why 5\% should be the minimum probability that an outcome needs to have to be considered. Any such line is likely to be ad hoc. Two, and more generally, why would it be rational to ignore highly improbably outcomes, especially if the corresponding utilities have large magnitudes?
