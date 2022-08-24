@@ -5,7 +5,7 @@ bookdown::tufte_html_book:
     #- custom.css 
   split_by: chapter
   mathjax: local
-  self_contained: false
+  #self_contained: false
 
 bookdown::pdf_book:
   base_format: tufte::tufte_book
